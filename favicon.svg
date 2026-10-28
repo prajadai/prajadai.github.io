@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .bg { fill: #F9F9F9; }
+      .letter { fill: #FF5A5F; }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #121212; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" width="512" height="512" rx="112" />
+
+  <text class="letter" x="50%" y="54%"
+        font-family="'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', sans-serif"
+        font-size="290"
+        font-weight="700"
+        text-anchor="middle"
+        dominant-baseline="middle">आ</text>
+</svg>

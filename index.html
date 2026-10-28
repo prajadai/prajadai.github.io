@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Prajapati | Portfolio</title>
+    <title>Ayush Prajapati</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -12,103 +16,181 @@
 
     <!-- NAV -->
     <nav>
-        <a href="#" class="nav-logo">AP</a>
+        <a href="#home" class="nav-logo">AP</a>
 
         <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Learning</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#connect">Connect</a></li>
         </ul>
-
-        <div class="nav-socials">
-            <a href="https://github.com/prajadai" target="_blank" title="GitHub">
-                <img src="images/github_logo.png" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
-                <img src="images/linkedin_bw.png" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com/prajadai" target="_blank" title="Instagram">
-                <img src="images/black-instagram-icon.png" alt="Instagram">
-            </a>
-        </div>
     </nav>
 
     <!-- HERO -->
-    <main class="hero">
-
-        <!-- LEFT HALF -->
-        <div class="hero-half">
-            <div>
-                <div class="hero-top">
-                    <div class="profile-wrap">
-                        <img
-                            src="images/profile2.JPG"
-                            alt="Ayush Prajapati"
-                            class="profile-img"
-                            onerror="this.style.display='none'; document.querySelector('.avatar-fallback').style.display='flex';"
-                        >
-                        <div class="avatar-fallback">AP</div>
-                    </div>
-                    <div class="hero-label-group">
-                        <div class="hero-label">AI &amp; ML</div>
-                        <div class="hero-name">Ayush Prajapati</div>
-                        <div class="hero-role-line">Enthusiast</div>
-                    </div>
+    <main class="hero" id="home">
+        <div>
+            <div class="hero-top">
+                <div class="profile-wrap">
+                    <img
+                        src="images/profile2.JPG"
+                        alt="Ayush Prajapati"
+                        class="profile-img"
+                        onerror="this.style.display='none'; document.querySelector('.avatar-fallback').style.display='flex';"
+                    >
+                    <div class="avatar-fallback">AP</div>
                 </div>
-
-                <h1 class="hero-headline">ML<br><span>Engineer</span></h1>
-
-                <p class="hero-desc">
-                    Computer Engineering undergraduate specializing in AI &amp; ML — building intelligent pipelines, engineering features, evaluating models, and deploying at scale.
-                </p>
+                <div class="hero-label-group">
+                    <div class="hero-name">Ayush Prajapati</div>
+                    <div class="hero-role-line">Enthusiast</div>
+                </div>
             </div>
 
-            <div class="btn-row">
-                <a href="resume.pdf" class="btn btn-filled" download>Download Resume</a>
-                <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+            <p class="hero-desc">
+                Computer Engineering Undergraduate Student at IOE, Pulchowk Campus
+            </p>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block-label">Tech Stack</div>
+            <div class="tags">
+                <span>Python</span><span>scikit-learn</span>
+                <span>PyTorch</span><span>Pandas</span><span>NumPy</span>
+                <span>Django</span><span>FastAPI</span>
+                <span>SQL</span><span>Git</span>
             </div>
         </div>
 
-        <!-- RIGHT HALF -->
-        <div class="hero-half">
-            <div class="hero-right-top">
-                <div class="info-block">
-                    <div class="info-block-label">Focus</div>
-                    <div class="info-block-value">Machine Learning · Feature Engineering<br>Model Evaluation · Scalable Deployment</div>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p class="connect-text">Let's connect</p>
-                <div class="inline-socials">
-                    <a href="https://github.com/prajadai" target="_blank" title="GitHub">
-                        <img src="images/github_logo.png" alt="GitHub">
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
-                        <img src="images/linkedin_bw.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://instagram.com/prajadai" target="_blank" title="Instagram">
-                        <img src="images/black-instagram-icon.png" alt="Instagram">
-                    </a>
-                </div>
-
-                <div class="btn-row">
-                    <a href="#" class="btn btn-filled">View Projects</a>
-                </div>
-            </div>
+        <div class="btn-row">
+            <a href="resume.pdf" class="btn btn-filled" download>Download Resume</a>
+            <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+            <a href="#projects" class="btn">View Projects</a>
         </div>
-
     </main>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="section-head">
+            <span class="section-index">01</span>
+            <h2 class="section-title">Projects</h2>
+            <span class="section-line"></span>
+        </div>
+
+        <div class="card-grid">
+            <!-- COPY THIS BLOCK FOR EACH NEW PROJECT -->
+            <article class="card">
+                <div class="card-meta">2025 · Machine Learning</div>
+                <h3 class="card-title">URL Shortener</h3>
+                <p class="card-desc">Allows the user to login and shorten URLs, and save the results for future use.</p>
+                <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLModel</span><span>JavaScript</span></div>
+                <div class="card-links">
+                    <a href="https://github.com/prajadai/URL-Shortener" target="_blank">GitHub ↗</a>
+                    <a href="https://url-shortener-31ml.onrender.com" target="_blank">Live Demo ↗</a>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="card-meta">2026 · Machine Learning</div>
+                <h3 class="card-title">Gym Tracker</h3>
+                <p class="card-desc">A perosnal project that I built to track my gym progress.</p>
+                <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLModel</span>
+                    <span>Alembic</span><span>Pydantic</span><span>JavaScript</span></div>
+                <div class="card-links">
+                    <a href="https://github.com/prajadai/Gym-Tracker" target="_blank">GitHub ↗</a>
+                    <a href="https://gym-tracker-1-0q0c.onrender.com" target="_blank">Live Demo ↗</a>
+                </div>
+            </article>
+            <!-- END BLOCK -->
+            
+            <article class="card placeholder">
+                <p>More projects coming soon</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+        <div class="section-head">
+            <span class="section-index">02</span>
+            <h2 class="section-title">Certifications</h2>
+            <span class="section-line"></span>
+        </div>
+
+        <div class="card-grid">
+            <!-- COPY THIS BLOCK FOR EACH NEW CERTIFICATE -->
+            <article class="card">
+                <div class="card-meta">Coursera · 2025</div>
+                <h3 class="card-title">Certificate Name</h3>
+                <p class="card-desc">What it covered, in one or two lines.</p>
+                <div class="tags"><span>Machine Learning</span><span>Python</span></div>
+                <div class="card-links">
+                    <a href="#" target="_blank">View Credential ↗</a>
+                </div>
+            </article>
+            <!-- END BLOCK -->
+
+            <article class="card placeholder">
+                <p>More certifications coming soon</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section class="section" id="connect">
+        <div class="section-head">
+            <span class="section-index">03</span>
+            <h2 class="section-title">Connect</h2>
+            <span class="section-line"></span>
+        </div>
+
+        <p class="connect-desc">
+            Interested in working together or just want to talk? Reach out through any of these.
+        </p>
+
+        <div class="connect-row">
+            <div class="inline-socials">
+                <a href="https://github.com/prajadai" target="_blank" title="GitHub"><img src="images/github_logo.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/ayush-prajapati-9154143b2/" target="_blank" title="LinkedIn"><img src="images/linkedin_bw.png" alt="LinkedIn"></a>
+            </div>
+
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <span class="footer-text"> <img src="images/gmail.png" width="20"> ayushpjpt10@gmail.com</span>
+        <span class="footer-text"><img src="images/gmail.png" width="20" alt="Email"> ayushpjpt10@gmail.com</span>
         <span class="footer-text">📍 Bhaktapur, Nepal</span>
-        <span class="footer-text">📞 +977-9763694950</span>
+        <span class="footer-text">📞 +977-9763694950, +977-9808763121</span>
     </footer>
+
+    <script>
+        // Highlight the nav link of the section currently in view
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const ids = ['home', 'projects', 'certifications', 'connect'];
+
+        function setActive(id) {
+            navLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) setActive(entry.target.id);
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        ids.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        // The last section is short, so highlight it when the page is scrolled to the bottom
+        window.addEventListener('scroll', () => {
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) {
+                setActive(ids[ids.length - 1]);
+            }
+        });
+    </script>
 
 </body>
 </html>
